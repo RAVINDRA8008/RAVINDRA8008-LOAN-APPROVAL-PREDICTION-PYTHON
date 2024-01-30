@@ -15,7 +15,7 @@ This project leverages machine learning to predict loan approval based on histor
 1. Clone the repository:
 
    ```
-   git clone https://github.com/RAVINDRA8008/loan-approval-prediction.git
+   https://github.com/RAVINDRA8008/RAVINDRA8008-LOAN-APPROVAL-PREDICTION-PYTHON.git
    ```
 2. Navigate to the project directory:
 
@@ -27,18 +27,43 @@ This project leverages machine learning to predict loan approval based on histor
    ```
    pip install -r requirements.txt
    ```
-# Model Training
-The notebook includes the training of two machine learning models: Decision Tree and Naive Bayes.
+   
+## Code Explanation
+The script does the following:
+1. Data Loading:
 
-# Loan Approval Prediction for Test Data
-After training the models, the notebook predicts loan approval for the test data (loan-test.csv) and outputs the results.
+    Loads the training dataset (loan-train.csv) into a Pandas DataFrame.
+ 2. Data Exploration:
 
-# File Descriptions
-1. Loan_Prediction.ipynb: Jupyter Notebook containing the code for data exploration, preprocessing, and model training.
-2. loan-train.csv: Training dataset.
-3. loan-test.csv: Test dataset.
+    Displays the first few rows, shape, information, and basic statistics of the dataset.
+ 3. Handling Missing Values:
+
+    Identifies and fills missing values in the dataset using the mode for categorical variables and the mean for numerical variables.
+ 4. Data Visualization:
+
+    Generates box plots and histograms to visualize the distribution of various features.
+ 5. Feature Engineering:
+
+    Creates new features, such as 'TotalIncome' and 'TotalIncome_log', by combining existing features and applying log transformation.
+ 6. Label Encoding:
+
+    Converts categorical variables into numerical format using label encoding.
+ 7. Train-Test Split:
+
+    Splits the dataset into training and testing sets for model evaluation.
+ 8. Model Training (Decision Tree and Naive Bayes):
+
+    Initializes, trains, and fits machine learning models (Decision Tree and Naive Bayes) using the training data.
+ 9. Model Evaluation:
+
+    Evaluates model performance using accuracy scores on the test set.
+    
+ 11. Predictions on Test Data:
+
+     Processes the test data, applies the trained Naive Bayes model, and makes predictions for loan approval.
 # Results
 The notebook provides accuracy scores for both the Decision Tree and Naive Bayes models. Additionally, it predicts loan approval for the test data and outputs the results.
 
-# Contributing
-Feel free to contribute to this project by opening issues or submitting pull requests.
+# Notes:
+1. Make sure you have Git, Python, and Jupyter Notebook installed on your system.
+2. If you encounter any issues during the installation or execution, please check error messages and ensure that your environment is properly set up.
